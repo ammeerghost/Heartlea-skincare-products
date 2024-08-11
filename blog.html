@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skincare Blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+}
+
+header {
+    background: #f8f1f1;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+.hero {
+    background: url('hero.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.hero button {
+    background: #ff6b6b;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.blog-posts {
+    padding: 20px;
+    text-align: center;
+}
+
+.blog-posts h2 {
+    margin-bottom: 20px;
+}
+
+.post {
+    background: white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    width: 30%;
+}
+
+.post img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.post h3 {
+    margin: 15px 0;
+}
+
+footer {
+    background: #f8f1f1;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.social-media a {
+    margin: 0 10px;
+}
+
+    </style>
+    <header>
+        <div class="logo">Skincare Bliss</div>
+        <nav>
+            <ul>
+                <li><a href="firstpage.html">Home</a></li>
+                <li><a href="About us.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Your Ultimate Skincare Guide</h1>
+            <p>Discover tips, tricks, and products that will transform your skin.</p>
+            <button onclick="scrollToBlog()">Read Our Blog</button>
+        </section>
+
+        <section id="blog" class="blog-posts">
+            <h2>Latest Posts</h2>
+            <article class="post">
+                <img src="post1.jpg" alt="Post 1">
+                <h3>Top 5 Skincare Ingredients to Look For</h3>
+                <p>Discover the key ingredients that can transform your skincare routine.</p>
+                <a href="#">Read more</a>
+            </article>
+            <article class="post">
+                <img src="post2.jpg" alt="Post 2">
+                <h3>How to Build a Skincare Routine</h3>
+                <p>A step-by-step guide to creating the perfect skincare routine for your skin type.</p>
+                <a href="#">Read more</a>
+            </article>
+            <article class="post">
+                <img src="post3.jpg" alt="Post 3">
+                <h3>The Benefits of Natural Skincare</h3>
+                <p>Why natural ingredients are better for your skin and the planet.</p>
+                <a href="#">Read more</a>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Skincare Bliss. All rights reserved.</p>
+        <div class="social-media">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+        </div>
+    </footer>
+
+    <script>
+        function scrollToBlog() {
+    document.getElementById('blog').scrollIntoView({ behavior: 'smooth' });
+}
+
+    </script>
+</body>
+</html>
